@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>1問1答システム</title>
+    <style>                                                                                                                                                                                                 
+        /* CSSスタイルを追加 */                                                                                                                                                                             
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>調べたい食品は？</h2>
+    <input type="text" id="question" placeholder="食品名を入力してください">
+    <button onclick="getAnswer()">検索</button>
+    <div id="answer"></div>
+
+    <script>
+        function getAnswer() {
+            var question = document.getElementById("question").value;
+            var answer = "";
+
+            // 質問に対する回答を取得するロジックを記述                                                                                                                                                     
+            if (question === "いちご" || question === "イチゴ" || qustion === "いちごかっと" || question === "イチゴカット") {answer = "D+3"; }
+            elif (question === "トマト") {answer = "D+3";}
+            else { answer = "回答が見つかりませんでした。"; }
+
+            document.getElementById("answer").innerHTML = answer;
+        }
+    </script>
+</body>
+</html>
